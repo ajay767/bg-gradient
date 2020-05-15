@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box img {
+        max-width: 80%;
+        box-shadow: 0px 25px 50px rgba(0,0,0,0.5);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img1.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="img2.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="img3.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="img4.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="img5.jpg" alt="">
+        </div>
+    </div>
+    <script src="https://unpkg.com/grade-js/docs/dist/grade.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            
+            Grade(document.querySelectorAll('.box'))
+        })
+    </script>
+</body>
+
+</html>
